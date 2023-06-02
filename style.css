@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+    --blueone: #182f64;
+    --bluetwo: #607EAA;
+    --whiteone: #EAE3D2;
+    --whitetwo: #F9F5EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+body>div.container{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.whatsapp-icon {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+div.whatsapp-icon i{
+    font-size: 50px;
+    color: whitesmoke;
+    margin-left: 25px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div.header-block {
+    width: 100%;
+    height: 5em;
+    background-color: var(--blueone);
+}
+
+header>nav {
+    width: 80%;
+    height: 75px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+header>nav>ul {
+    list-style-type: none;
+}
+
+header>nav>ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.nav-item {
+    border-right: 2px rgb(0, 0, 0, 0.8) dotted;
+}
+
+header>nav>ul li:last-child {
+    border-right: none;
+}
+
+section.jumbotron {
+    width: 100%;
+    height: 50em;
+    background: url("golden doodle.jpeg") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav.jumbotron-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.circle-nav {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    bottom: 9em;
+    border-radius: 100%;
+    background-color: white;
+    margin: 1em;
+}
+
+section.content-one {
+    width: 80%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: #F9F5EB; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.content-one>div.left, section.content-one>div.right {
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    /* background-color: #EAE3D2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section.content-one>div.left .item, section.content-one>div.right .item {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+section.content-one>div.left div.enrol-btn {
+    width: 50%;
+    height: 40px;
+    background-color: var(--whitetwo);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-two {
+    width: 100%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-two>div.container {
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+}
+
+section.content-two>div.container>div.content {
+    width: 100%;
+    height: 90%;
+    background: url("golden doodle.jpeg") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.content-two .content h1, section.content-two .content p {
+    color: white;
+    text-shadow: 1px 1px aqua;
+}
+
+section.content-two .content p {
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+section.content-three{
+    width: 100%;
+    height: 60em;
+    background: url("golden doodle.jpg") center center / cover;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+section.content-three>div.top{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.content-three>div.top>div.img {
+    width: 100%;
+    height: 100%;
+    background: url("golden doodle.jpeg") center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-three>div.top>h1{
+    display: flex;
+    justify-content: center;
+    font-size: 30pt;
+}
+
+section.content-three>div.top>p{
+    display: flex;
+    justify-content: center;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+section.content-three>div.bottom{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.content-three>div.bottom>div.btn{
+    height: 1.5em;
+    font-size: 20pt;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: yellow;
+    align-items: center;
+}
+
+section.content-four{
+    width: 80%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: greenyellow; */
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.content-four>div.left, section.content-four>div.right{
+    width: 48%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+section.content-four>div.left>h1{
+    height: 10%;
+    font-size: 20pt;
+    font-family: 'Inter', sans-serif;
+}
+
+section.content-four>div.left>div.container{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+section.content-four>div.left>div.container>div.content{
+    width: 100%;
+    height: 100%;
+    background: url("golden doodle.jpeg") center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.content-four>div.right>div.title{
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10pt;
+    margin: 0em 2em;
+}
+
+section.content-four>div.right>div.title>h2{
+    margin: 0em 1em;
+}
+
+section.content-four>div.right>div.container{
+    width: 90%;
+    height: 80%;
+    /* background-color: red; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+section.content-four>div.right>div.container>div.picture{
+    width: 33%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+section.content-four>div.right>div.container>div.picture>div.satu, section.content-four>div.right>div.container>div.picture>div.dua, section.content-four>div.right>div.container>div.picture>div.tiga{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.content-four>div.right>div.container>div.text{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+section.content-four>div.right>div.container>div.text>div.satu, section.content-four>div.right>div.container>div.text>div.dua, section.content-four>div.right>div.container>div.text>div.tiga{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer, footer>.container{ 
+    width: 100%;
+    height: 600px; 
+    box-sizing: border-box;
+    background-color: var(--blueone);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>.container {
+    width: 80%;
+}
+
+footer section.top {
+    width: 100%;
+    height: 80%;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    border-bottom: var(--whitetwo) 0.25em solid;
+    justify-content: space-between;
+}
+
+footer section.top>div.item {
+    width: 23%;
+    height: 100%;
+    box-sizing: border-box;
+    /* background-color: var(--bluetwo); */
+    display: flex;
+    flex-direction: column;
+}
+
+div.item-social-media {
+    width: 100%;
+    height: 75%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.social-media>img{
+    width: 135px;
+    height: 150px;
+}
+
+div.item-social-media>h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+div.item-social-media>div.social-icons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+div.item-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em;
+    color: white;
+}
+
+div.item-about, div.item-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em 0;
+    color: white;
+}
+
+div.item-contact>h2, div.item-about>h2, div.item-news>h2 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+    padding: 2em 0;
+}
+
+div.circle-social-icons {
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+div.item-contact>ul {
+    list-style-type: none;
+}
+
+div.item-about>ul, div.item-news>ul {
+    list-style-type: none;
+    margin: 1em 1em;
+}
+
+div.item-contact ul li, div.item-about ul li, div.item-news ul li {
+    margin-bottom: 5px;
+    font-size: 10pt;
+}
+
+footer section.bottom {
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section.bottom>p {
+    font-size: small;
+    color: white;
+}
+
